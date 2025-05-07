@@ -15,6 +15,13 @@
       "when": 1743515338707,
       "tag": "0001_classy_the_stranger",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1746624590666,
+      "tag": "0002_broken_miracleman",
+      "breakpoints": true
     }
   ]
 }

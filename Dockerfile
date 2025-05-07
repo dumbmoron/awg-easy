@@ -69,8 +69,7 @@ RUN apk add --no-cache \
     ip6tables \
     nftables \
     kmod \
-    iptables-legacy \
-    wireguard-tools
+    iptables-legacy
 
 # Use iptables-legacy
 RUN update-alternatives --install /usr/sbin/iptables iptables /usr/sbin/iptables-legacy 10 --slave /usr/sbin/iptables-restore iptables-restore /usr/sbin/iptables-legacy-restore --slave /usr/sbin/iptables-save iptables-save /usr/sbin/iptables-legacy-save

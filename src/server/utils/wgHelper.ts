@@ -79,8 +79,8 @@ PrivateKey = ${client.privateKey}
 Address = ${client.ipv4Address}/${cidr4Block}, ${client.ipv6Address}/${cidr6Block}
 DNS = ${(client.dns ?? userConfig.defaultDns).join(', ')}
 MTU = ${client.mtu}
-${hookLines.length ? `${hookLines.join('\n')}\n` : ''}
 ${wg.amneziaParamsToConfig(wgInterface)}
+${hookLines.length ? `${hookLines.join('\n')}\n` : ''}
 
 [Peer]
 PublicKey = ${wgInterface.publicKey}
